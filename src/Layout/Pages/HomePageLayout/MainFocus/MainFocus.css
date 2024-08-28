@@ -8,21 +8,28 @@
   color: #0D263B;
   font-weight: 600;
   text-align: center;
-  border: 2px solid red;
 }
 
 .main_focus_card_outer_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 100px 50px;
   gap: 100px;
-  border: 2px solid green;
 }
 
 .focus_parcard_container {
+  cursor: pointer;
   padding-bottom: 40px;
-  border: 2px solid tomato;
+  border-radius: 8px;
+  border-bottom: 5px solid transparent;
+  box-shadow: #88a5bf7a 6px 2px 16px 0px, #ffffffcc -6px -2px 16px 0px;
+}
+
+.focus_parcard_container:hover {
+  transition: 0.5s ease-in-out;
+
+  border-bottom: 5px solid #8b5cf4;
 }
 
 .svg_image_outer_container {
@@ -35,7 +42,7 @@
 .svg_image_inner_container {
   padding: 20px;
   border-radius: 50%;
-  
+  box-shadow: #ccdbe8 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
 }
 
 .focus_section_detais_container {
@@ -58,4 +65,41 @@
 .focus_section_detais_container span {
   font-size: 1.1rem;
   color: #8b5cf4;
+}
+
+.main_focus_builder_info_outer_container {
+  background-color: #e2efff;
+  border: 2px solid tomato;
+}
+
+.main_focus_builder_info_inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.builder_par_section_container {
+  text-align: center;
+  font-family: "Inter", serif;
+  border: 2px solid red;
+}
+
+.builder_par_section_container h3 {
+  font-size: 2.5rem;
+  color: #0D263B;
+  font-weight: 700;
+}
+
+.builder_par_section_container p {
+  font-size: 1rem;
+  color: #7C8893;
+  padding: 10px 0;
+}
+
+.builder_Info_icon_cntainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
