@@ -1,0 +1,61 @@
+.main_focus_section_outer_container {
+  margin-top: 100px;
+}
+
+.focus_section_title_container {
+  font-size: 3rem;
+  font-family: "Inter", serif;
+  color: #0D263B;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.main_focus_card_outer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  gap: 100px;
+  border: 2px solid green;
+}
+
+.focus_parcard_container {
+  padding-bottom: 40px;
+  border: 2px solid tomato;
+}
+
+.svg_image_outer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.svg_image_inner_container {
+  padding: 20px;
+  border-radius: 50%;
+  
+}
+
+.focus_section_detais_container {
+  text-align: center;
+  font-family: "Inter", serif;
+}
+
+.focus_section_detais_container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #8b5cf4;
+}
+
+.focus_section_detais_container p {
+  color: #7C8893;
+  font-size: 1rem;
+  padding: 20px 20px;
+}
+
+.focus_section_detais_container span {
+  font-size: 1.1rem;
+  color: #8b5cf4;
+}
