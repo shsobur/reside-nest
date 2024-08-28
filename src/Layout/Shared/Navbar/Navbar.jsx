@@ -20,8 +20,15 @@ const Navbar = () => {
             <h2>ResideNest</h2>
           </div>
 
-          <div id="main_navigater_outer_container">
-            <ul>
+          <div 
+            id="main_navigater_outer_container" 
+            className={
+              burgerMenu ? 
+                "#main_navigater_outer_container isActive"
+              : "#main_navigater_outer_container"
+            }
+          >
+            <ul onClick={handelBurgerMenuIcon}>
               <NavLink
                 to="/"
                 className={({ isActive }) =>

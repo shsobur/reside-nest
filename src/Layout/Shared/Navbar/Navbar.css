@@ -56,6 +56,7 @@
 .sing_in_btn:hover {
   border: 2px solid #8b5cf4;
   background-color: transparent;
+  color: #151515;
   transition: 0.3s;
 }
 
@@ -67,17 +68,6 @@
   font-size: 2rem;
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 1280px) {
@@ -97,10 +87,6 @@
     padding: 8px 30px;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 1024px) {
   .main_nav_bar_inner_container {
@@ -124,11 +110,11 @@
   }
 }
 
-
-
-
-
 @media screen and (max-width: 768px) {
+  .web_name_container {
+    font-size: 1.8rem;
+  }
+
   .burger_menu_container {
     display: block;
   }
@@ -148,31 +134,22 @@
     z-index: 101;
     padding: 10px 20px;
     background-color: #dcdcdcba;
+    transition: 0.4s ease-in;
+  }
+
+  #main_navigater_outer_container.isActive ul {
+    right: -500px;
+  }
+
+  .sing_in_btn {
+    padding: 2px 15px;
+    font-size: 1rem;
   }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 640px) {
-  
-}
-
-
-
-
-
-@media screen and (max-width: 475px) {
-  
+  .main_nav_bar_inner_container {
+    padding: 10px 10px;
+  }
 }
