@@ -18,6 +18,7 @@
   z-index: 99;
   padding: 10px 50px;
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid black;
 }
 
 .web_name_container {
@@ -27,7 +28,7 @@
   font-weight: 700;
 }
 
-.main_navigater_outer_container ul {
+#main_navigater_outer_container ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,4 +61,118 @@
 
 .nav_user_icon {
   font-size: 2rem;
+}
+
+.burger_menu_container {
+  font-size: 2rem;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .web_name_container {
+    font-size: 1.8rem;
+  }
+
+  #main_navigater_outer_container ul {
+    gap: 30px;
+  }
+
+  .nav_bar_user_Info_contaienr {
+    gap: 30px;
+  }
+
+  .sing_in_btn {
+    padding: 8px 30px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .main_nav_bar_inner_container {
+    padding: 10px 30px;
+  }
+
+  .web_name_container {
+    font-size: 1.6rem;
+  }
+
+  #main_navigater_outer_container ul {
+    gap: 20px;
+  }
+
+  .nav_bar_user_Info_contaienr {
+    gap: 20px;
+  }
+
+  .sing_in_btn {
+    padding: 8px 20px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .burger_menu_container {
+    display: block;
+  }
+
+  #main_navigater_outer_container ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    backdrop-filter: blur(10px);
+    border-left: 1px solid black;
+    height: calc(100vh - 80px);
+    width: 50%;
+    top: 80px;
+    right: -0;
+    z-index: 101;
+    padding: 10px 20px;
+    background-color: #dcdcdcba;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  
+}
+
+
+
+
+
+@media screen and (max-width: 475px) {
+  
 }
