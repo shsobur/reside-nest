@@ -6,11 +6,13 @@ import Main from "./Layout/Main/Main";
 import HomePageLayout from "./Layout/Pages/HomePageLayout/HomePageLayout";
 import UpdateProfileLayout from "./Layout/Pages/UpdateProfileLayout/UpdateProfileLayout";
 import ContactPageLayout from "./Layout/Pages/ContactPageLayout/ContactPageLayout";
+import ErrorPage from "./Layout/conmponents/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
