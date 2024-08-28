@@ -28,7 +28,6 @@
 
 .focus_parcard_container:hover {
   transition: 0.5s ease-in-out;
-
   border-bottom: 5px solid #8b5cf4;
 }
 
@@ -129,7 +128,17 @@
 
 
 @media screen and (max-width: 1024px) {
-  
+  .main_focus_card_outer_container {
+    gap: 20px;
+  }
+
+  .focus_section_detais_container h3 {
+    font-size: 1.3rem;
+  }
+
+  .focus_section_detais_container p {
+    padding: 15px 10px;
+  }
 }
 
 
@@ -137,7 +146,17 @@
 
 
 @media screen and (max-width: 768px) {
-  
+  .main_focus_card_outer_container {
+    gap: 10px;
+  }
+
+  .svg_image_inner_container {
+    padding: 10px;
+  }
+
+  .focus_section_detais_container p {
+    font-size: 14px;
+  }
 }
 
 
@@ -145,7 +164,29 @@
 
 
 @media screen and (max-width: 640px) {
-  
+  .main_focus_card_outer_container {
+    padding: 100px 10px;
+  }
+
+  .main_focus_card_outer_container {
+    flex-direction: column;
+  }
+
+  .svg_image_outer_container {
+    padding: 50px 0;
+  }
+
+  .focus_section_detais_container h3 {
+    font-size: 1.5rem;
+  }
+
+  .focus_section_detais_container p {
+    padding: 20px 10px;
+  }
+
+  .focus_parcard_container {
+    padding-bottom: 20px;
+  }
 }
 
 
@@ -153,5 +194,15 @@
 
 
 @media screen and (max-width: 475px) {
-  
+  .main_focus_card_outer_container {
+    padding: 70px 10px;
+  }
+
+  .svg_image_outer_container {
+    padding: 20px 0;
+  }
+
+  .focus_section_detais_container p {
+    padding: 10px 10px;
+  }
 }
