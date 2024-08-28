@@ -68,21 +68,19 @@
 }
 
 .main_focus_builder_info_outer_container {
-  background-color: #e2efff;
-  border: 2px solid tomato;
+  background-color: #f2ecfe;
 }
 
 .main_focus_builder_info_inner_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 50px 50px;
 }
 
 .builder_par_section_container {
   text-align: center;
   font-family: "Inter", serif;
-  border: 2px solid red;
 }
 
 .builder_par_section_container h3 {
@@ -102,4 +100,58 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1536px) {
+  
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .main_focus_card_outer_container {
+    gap: 50px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  
+}
+
+
+
+
+
+@media screen and (max-width: 475px) {
+  
 }

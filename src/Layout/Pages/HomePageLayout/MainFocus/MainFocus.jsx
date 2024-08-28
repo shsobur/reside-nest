@@ -1,6 +1,6 @@
+import "../MainFocus/MainFocus.css";
 import { Link } from "react-router-dom";
 import BuyHomeSvg from "../../../conmponents/AllSvgImages/BuyHomeSvg/BuyHomeSvg";
-import "../MainFocus/MainFocus.css";
 import RentHomeSvg from "../../../conmponents/AllSvgImages/RentHomeSvg/RentHomeSvg";
 import SellHomeSvg from "../../../conmponents/AllSvgImages/SellHomeSvg/SellHomeSvg";
 import ConstructionSvg from "../../../conmponents/AllSvgImages/ConstructionSvg/ConstructionSvg";

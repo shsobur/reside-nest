@@ -42,7 +42,8 @@ const HomeBaner = () => {
         </div>
 
         <div className="cursor-pointer home_baner_right_contaienr">
-          <Swiper
+          <div className="home_baner_right_inner_contaienr">
+            <Swiper
             slidesPerView={1}
             spaceBetween={30}
             loop={true}
@@ -59,14 +60,17 @@ const HomeBaner = () => {
             <SwiperSlide><img src={img4} alt="banerImage" /></SwiperSlide>
             <SwiperSlide><img src={img5} alt="banerImage" /></SwiperSlide>
             <SwiperSlide><img src={img6} alt="banerImage" /></SwiperSlide>
-          </Swiper>
+            </Swiper>
 
-          <div className="baner_rigth_dream_section_container">
-            <span>Buy Your Dream Home</span>
-            <h2>77+</h2>
-            <p>Home Available</p>
-            <button>View All</button>
+            <div className="baner_rigth_dream_section_container">
+              <span>Buy Your Dream Home</span>
+              <h2>77+</h2>
+              <p>Home Available</p>
+              <button>View All</button>
+            </div>
           </div>
+
+          
         </div>
 
       </div>
