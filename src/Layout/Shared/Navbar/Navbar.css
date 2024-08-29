@@ -22,9 +22,14 @@
 }
 
 .web_name_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-family: "Inter", serif;
   font-size: 2rem;
   color: #8b5cf4;
+  cursor: pointer;
   font-weight: 700;
 }
 

@@ -4,6 +4,7 @@ import { FaRegCircleUser } from "react-icons/fa6";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
+import { SiHomebridge } from "react-icons/si";
 
 const Navbar = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
@@ -16,9 +17,12 @@ const Navbar = () => {
     <>
       <nav className="main_nav_bar_outer_container">
         <div className="main_nav_bar_inner_container">
-          <div className="web_name_container">
-            <h2>Reside<span className="text-[#0D263B]">Nest</span></h2>
-          </div>
+          <Link to="/">
+            <div className="web_name_container">
+              <div><SiHomebridge /></div>
+              <h2>Reside<span className="text-[#0D263B]">Nest</span></h2>
+            </div>
+          </Link>
 
           <div 
             id="main_navigater_outer_container" 

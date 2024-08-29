@@ -17,7 +17,6 @@ import img2 from "../../../../assets/baner-img/baner (2).png"
 import img3 from "../../../../assets/baner-img/baner (3).png"
 import img4 from "../../../../assets/baner-img/baner (4).png"
 import img5 from "../../../../assets/baner-img/baner (5).png"
-import img6 from "../../../../assets/baner-img/baner (6).png"
 
 const HomeBaner = () => {
   return (
@@ -59,7 +58,6 @@ const HomeBaner = () => {
             <SwiperSlide><img src={img3} alt="banerImage" /></SwiperSlide>
             <SwiperSlide><img src={img4} alt="banerImage" /></SwiperSlide>
             <SwiperSlide><img src={img5} alt="banerImage" /></SwiperSlide>
-            <SwiperSlide><img src={img6} alt="banerImage" /></SwiperSlide>
             </Swiper>
 
             <div className="baner_rigth_dream_section_container">
