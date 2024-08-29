@@ -1,7 +1,7 @@
 import { SiHomebridge } from "react-icons/si";
 import "../Footer/Footer.css";
 import { MdOutlineLocationOn } from "react-icons/md";
-import { AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
+import { AiOutlineMobile } from "react-icons/ai";
 import { CiFacebook, CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
 
         <div className="footer_content_top_container">
 
-          <div className="main_footer_title_container">
+          <div id="footer_box-1" className="main_footer_title_container">
 
             <div className="footer_main_title_container">
               <h3>
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="main_footer_Info_container">
+          <div id="footer_box-2" className="main_footer_Info_container">
             <h2>Quick Links</h2>
             <p>Home</p>
             <p>Update Profile</p>
@@ -44,7 +44,7 @@ const Footer = () => {
             <p>About Us</p>
           </div>
 
-          <div className="main_footer_Info_container">
+          <div id="footer_box-3" className="main_footer_Info_container">
             <h2>Services</h2>
             <p>Wish List</p>
             <p>Login</p>
@@ -53,7 +53,7 @@ const Footer = () => {
             <p>Promotional Offers</p>
           </div>
 
-          <div className="main_footer_Info_container">
+          <div id="footer_box-4" className="main_footer_Info_container">
             <h2>Contract</h2>
 
             <div className="footer_contact_info_container">
@@ -71,20 +71,13 @@ const Footer = () => {
               </p>
               <h3>+880 17875 92274</h3>
             </div>
-
-            <div className="footer_contact_info_container">
-              <p>
-                <AiOutlineMail />
-              </p>
-              <h3>shsoburhossen951@gmail.com</h3>
-            </div>
           </div>
 
         </div>
 
         <div className="footer_bottam_container">
           <div>© Copyright Medih 2022 All Right Reserved.</div>
-          <div>Terms Of Use <span className="pl-10 pr-10">|</span> Privacy Policy</div>
+          <div>Terms Of Use <span className="pl-5 pr-5">|</span> Privacy Policy</div>
         </div>
 
       </div>
