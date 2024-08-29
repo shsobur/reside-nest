@@ -2,8 +2,8 @@ const ApartioSvg = () => {
   return (
     <>
       <svg
-        width="84.000000"
-        height="76.000000"
+        width="55.000000"
+        height="55.000000"
         viewBox="0 0 84 76"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

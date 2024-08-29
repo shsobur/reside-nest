@@ -102,30 +102,11 @@
 }
 
 
-
-
-
-
-
-
-
-@media screen and (max-width: 1536px) {
-  
-}
-
-
-
-
-
 @media screen and (max-width: 1280px) {
   .main_focus_card_outer_container {
     gap: 50px;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 1024px) {
   .main_focus_card_outer_container {
@@ -139,11 +120,11 @@
   .focus_section_detais_container p {
     padding: 15px 10px;
   }
+
+  .builder_par_section_container h3 {
+    font-size: 2.3rem;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .main_focus_card_outer_container {
@@ -157,11 +138,15 @@
   .focus_section_detais_container p {
     font-size: 14px;
   }
+
+  .builder_par_section_container h3 {
+    font-size: 1.8rem;
+  }
+
+  .builder_par_section_container p {
+    font-size: 14px;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 640px) {
   .main_focus_card_outer_container {
@@ -187,11 +172,13 @@
   .focus_parcard_container {
     padding-bottom: 20px;
   }
+
+  .main_focus_builder_info_inner_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 0px;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 475px) {
   .main_focus_card_outer_container {

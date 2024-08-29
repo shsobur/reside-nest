@@ -78,37 +78,37 @@ const MainFocus = () => {
         <div className="main_focus_builder_info_outer_container">
           <div className="main_focus_builder_info_inner_container">
 
-            <div className="builder_par_section_container">
-              <div className="builder_Info_icon_cntainer">
-                <ConstructionSvg></ConstructionSvg>
+              <div className="builder_par_section_container">
+                <div className="builder_Info_icon_cntainer">
+                  <ConstructionSvg></ConstructionSvg>
+                </div>
+                <h3>300+</h3>
+                <p>Total Construction</p>
               </div>
-              <h3>300+</h3>
-              <p>Total Construction</p>
-            </div>
 
-            <div className="builder_par_section_container">
-              <div className="builder_Info_icon_cntainer">
-                <ApartioSvg></ApartioSvg>
+              <div className="builder_par_section_container">
+                <div className="builder_Info_icon_cntainer">
+                  <ApartioSvg></ApartioSvg>
+                </div>
+                <h3>140+</h3>
+                <p>Apartio Rooms</p>
               </div>
-              <h3>140+</h3>
-              <p>Apartio Rooms</p>
-            </div>
 
-            <div className="builder_par_section_container">
-              <div className="builder_Info_icon_cntainer">
-                <ApartmentsSvg></ApartmentsSvg>
+              <div className="builder_par_section_container">
+                <div className="builder_Info_icon_cntainer">
+                  <ApartmentsSvg></ApartmentsSvg>
+                </div>
+                <h3>250+</h3>
+                <p>Apartments Sold</p>
               </div>
-              <h3>250+</h3>
-              <p>Apartments Sold</p>
-            </div>
 
-            <div className="builder_par_section_container">
-              <div className="builder_Info_icon_cntainer">
-                <AreaSvg></AreaSvg>
+              <div className="builder_par_section_container">
+                <div className="builder_Info_icon_cntainer">
+                  <AreaSvg></AreaSvg>
+                </div>
+                <h3>710+</h3>
+                <p>Total Area Sq</p>
               </div>
-              <h3>710+</h3>
-              <p>Total Area Sq</p>
-            </div>
 
           </div>
         </div>
