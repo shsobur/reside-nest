@@ -1,0 +1,117 @@
+.main_authentication_page_outer_container {
+  height: 100vh;
+  max-width: 1920px;
+  min-width: 400px;
+  margin: auto;
+  padding: 0 50px;
+  background-color: #f4f9ff;
+}
+.main_authentication_page_inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main_authentication_form_container {
+  height: auto;
+  width: 40%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, #0000004d 0px 7px 13px -3px, #00000033 0px -3px 0px inset;
+  padding: 20px;
+}
+
+.authentication_form_title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Inter", serif;
+  color: #0D263B;
+}
+
+.main_authentication_form_outer_container {
+  height: auto;
+  width: 100%;
+}
+
+.authentication_form_input_container {
+  margin: 25px 0;
+}
+
+.authentication_form_input_container input {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: #0e3f7e0a 0px 0px 0px 1px, #2a33450a 0px 1px 1px -0.5px, #2a33460a 0px 3px 3px -1.5px, #2a33460a 0px 6px 6px -3px, #0e3f7e0a 0px 12px 12px -6px, #0e3f7e0a 0px 24px 24px -12px;
+}
+
+.pass_show_icon {
+  position: relative;
+}
+
+.pass_show_icon h2 {
+  position: absolute;
+  right: 20px;
+  bottom: 41px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.authentication_submit_btn input {
+  width: 100%;
+  padding: 6px 0;
+  font-size: 1.2rem;
+  font-family: "Inter", serif;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #0D263B;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .main_authentication_form_container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main_authentication_form_container {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_authentication_form_container {
+    width: 75%;
+  }
+
+  .authentication_submit_btn input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main_authentication_page_outer_container {
+    padding: 0 10px;
+  }
+
+  .main_authentication_form_container {
+    width: 85%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 475px) {
+  .main_authentication_form_container {
+    width: 90%;
+  }
+}

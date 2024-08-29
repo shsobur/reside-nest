@@ -1,5 +1,5 @@
 import "../Navbar/Navbar.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav className="main_nav_bar_outer_container">
         <div className="main_nav_bar_inner_container">
           <div className="web_name_container">
-            <h2>ResideNest</h2>
+            <h2>Reside<span className="text-[#0D263B]">Nest</span></h2>
           </div>
 
           <div 
@@ -76,7 +76,11 @@ const Navbar = () => {
           </div>
 
           <div className="nav_bar_user_Info_contaienr">
-            <div className="sing_in_btn">Sing In</div>
+            <Link to="/singin">
+              <div className="sing_in_btn">
+                Sing In
+              </div>
+            </Link>
 
             <div className="nav_user_icon">
               <FaRegCircleUser />
