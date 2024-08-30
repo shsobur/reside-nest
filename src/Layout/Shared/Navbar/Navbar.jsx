@@ -1,17 +1,21 @@
 import "../Navbar/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import { FaRegCircleUser } from "react-icons/fa6";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { SiHomebridge } from "react-icons/si";
+import { AuthContext } from "../../conmponents/AuthProvider/AuthProvider";
 
 const Navbar = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
+  const { user } = useContext(AuthContext);
+  const userImage = user?.photoURL;
+  console.log(user?.photoURL);
 
   const handelBurgerMenuIcon = () => {
     setBurgerMenu(!burgerMenu);
-  }
+  };
 
   return (
     <>
@@ -19,17 +23,21 @@ const Navbar = () => {
         <div className="main_nav_bar_inner_container">
           <Link to="/">
             <div className="web_name_container">
-              <div><SiHomebridge /></div>
-              <h2>Reside<span className="text-[#0D263B]">Nest</span></h2>
+              <div>
+                <SiHomebridge />
+              </div>
+              <h2>
+                Reside<span className="text-[#0D263B]">Nest</span>
+              </h2>
             </div>
           </Link>
 
-          <div 
-            id="main_navigater_outer_container" 
+          <div
+            id="main_navigater_outer_container"
             className={
-              burgerMenu ? 
-                "#main_navigater_outer_container isActive"
-              : "#main_navigater_outer_container"
+              burgerMenu
+                ? "#main_navigater_outer_container isActive"
+                : "#main_navigater_outer_container"
             }
           >
             <ul onClick={handelBurgerMenuIcon}>
@@ -80,14 +88,26 @@ const Navbar = () => {
           </div>
 
           <div className="nav_bar_user_Info_contaienr">
-            <Link to="/singin">
-              <div className="sing_in_btn">
-                Sing In
-              </div>
-            </Link>
+            <div>
+              {user ? (
+                <div className="sing_in_btn">Sing Out</div>
+              ) : (
+                <Link to="/singin">
+                  <div className="sing_in_btn">Sing In</div>
+                </Link>
+              )}
+            </div>
 
-            <div className="nav_user_icon">
-              <FaRegCircleUser />
+            <div>
+              {userImage ? (
+                <div className="nav_user_image">
+                  <img src={userImage} />
+                </div>
+              ) : (
+                <div className="nav_user_icon">
+                  <FaRegCircleUser />
+                </div>
+              )}
             </div>
 
             <div

@@ -1,13 +1,17 @@
 import { SiFacepunch } from "react-icons/si";
 import "../AuthenticationStyle/AuthenticationStyle.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaRegFaceFlushed } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../../../conmponents/SocialLogin/SocialLogin";
 import { useForm } from "react-hook-form";
+import { AuthContext } from "../../../conmponents/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const SingUp = () => {
   const [showPass, setShowPass] = useState(false);
+  const {singUpUser} = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleShowPass = () => {
     setShowPass(!showPass);
@@ -23,7 +27,33 @@ const SingUp = () => {
     const name = data.name;
     const email = data.email;
     const password = data.password;
+
     console.log(name, email, password);
+
+    singUpUser(email, password)
+    .then(result => {
+      const singUpUser = result.user
+      console.log(singUpUser);
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top",
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Signed Up successfully"
+      });
+      navigate("/");
+    })
+    .catch(error => {
+      console.log(error)
+    })
   };
 
   return (
@@ -46,7 +76,7 @@ const SingUp = () => {
                 <div>
                   {errors.name && (
                     <span className="text-xs font-light text-red-500">
-                      Name is required
+                      Name is required.
                     </span>
                   )}
                 </div>
@@ -70,7 +100,7 @@ const SingUp = () => {
                 <div>
                   {errors.email && (
                     <span className="text-xs font-light text-red-500">
-                      Email is required
+                      Email is required.
                     </span>
                   )}
                 </div>
@@ -81,29 +111,8 @@ const SingUp = () => {
                   type={showPass ? "text" : "password"}
                   name="password"
                   placeholder="Enter Your Password(***)"
-                  {...register(
-                    "password",
-                    { required: true },
-                    { required: true, minLength: 6 }
-                  )}
+                  {...register("password", { required: true, minLength: 6, pattern: /^(?=.*[a-z])(?=.*[A-Z]).*$/ })}
                 />
-
-                <div>
-                  {errors.password?.type === "required" && (
-                    <span className="text-xs font-light text-red-500">
-                      Your password should be least 6 characters
-                    </span>
-                  )}
-                </div>
-
-                <div>
-                  {errors.password?.type === "minLength" && (
-                    <span className="text-xs font-light text-red-500">
-                      Your password should be least 6 characters
-                    </span>
-                  )}
-                </div>
-
               </div>
 
               <div className="pass_show_icon">
@@ -111,6 +120,26 @@ const SingUp = () => {
                   {showPass ? <FaRegFaceFlushed /> : <SiFacepunch />}
                 </h2>
               </div>
+
+              <div className="mb-5">
+                  {errors.password?.type === "required" && (
+                    <span className="text-xs font-light text-red-500">
+                      Password is required.
+                    </span>
+                  )}
+
+                  {errors.password?.type === "minLength" && (
+                    <span className="text-xs font-light text-red-500">
+                      Password should be at least 6 characters.
+                    </span>
+                  )}
+
+                  {errors.password?.type === "pattern" && (
+                    <span className="text-xs font-light text-red-500">
+                      Use at least one uppercase(A-Z) and lowercase(a-z) character.
+                    </span>
+                  )}
+                </div>
 
               <div className="authentication_submit_btn">
                 <input type="submit" value="Sing Up" />

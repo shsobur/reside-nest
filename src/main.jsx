@@ -9,6 +9,7 @@ import ContactPageLayout from "./Layout/Pages/ContactPageLayout/ContactPageLayou
 import ErrorPage from "./Layout/conmponents/ErrorPage/ErrorPage";
 import SingIn from "./Layout/Pages/Authentication/SingIn/SingIn";
 import SingUp from "./Layout/Pages/Authentication/SingUp/SingUp";
+import AuthProvider from "./Layout/conmponents/AuthProvider/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePageLayout></HomePageLayout>
+        element: <HomePageLayout></HomePageLayout>,
       },
       {
         path: "/updateprofile",
@@ -26,22 +27,24 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <ContactPageLayout></ContactPageLayout>
+        element: <ContactPageLayout></ContactPageLayout>,
       },
       {
         path: "/singin",
-        element: <SingIn></SingIn>
+        element: <SingIn></SingIn>,
       },
       {
         path: "/singup",
-        element: <SingUp></SingUp>
+        element: <SingUp></SingUp>,
       },
-    ]
+    ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );
