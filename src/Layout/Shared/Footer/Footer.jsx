@@ -5,6 +5,8 @@ import { AiOutlineMobile } from "react-icons/ai";
 import { CiFacebook, CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="main_footer_section_outer_container">
       <div className="main_footer_section_inner_container">
@@ -12,7 +14,6 @@ const Footer = () => {
         <div className="footer_content_top_container">
 
           <div id="footer_box-1" className="main_footer_title_container">
-
             <div className="footer_main_title_container">
               <h3>
                 <SiHomebridge />
@@ -76,7 +77,7 @@ const Footer = () => {
         </div>
 
         <div className="footer_bottam_container">
-          <div>© Copyright Medih 2022 All Right Reserved.</div>
+          <div>© Copyright Medih {currentYear} All Right Reserved.</div>
           <div>Terms Of Use <span className="pl-5 pr-5">|</span> Privacy Policy</div>
         </div>
 

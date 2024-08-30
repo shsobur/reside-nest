@@ -4,6 +4,7 @@ import "../AuthenticationStyle/AuthenticationStyle.css";
 import { SiFacepunch } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import SocialLogin from "../../../conmponents/SocialLogin/SocialLogin";
 
 const SingIn = () => {
   const [showPass, setShowPass] = useState(false);
@@ -35,7 +36,7 @@ const SingIn = () => {
                 <input
                   type="password"
                   name="password"
-                  placeholder="Enter Your Password(***)"
+                  placeholder="Password(***)"
                 />
               </div>
 
@@ -47,6 +48,10 @@ const SingIn = () => {
 
               <div className="authentication_submit_btn">
                 <input type="submit" value="Sing Up" />
+              </div>
+
+              <div>
+                <SocialLogin></SocialLogin>
               </div>
 
               <h2 className="mt-3 text-center">

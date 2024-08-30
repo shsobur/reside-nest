@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "../HomeBaner/HomeBaner.css";
 
-// Swper js__
+// Swiper js__
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-// Swpre css__
+// Swipre css__
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
