@@ -6,16 +6,41 @@ import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { SiHomebridge } from "react-icons/si";
 import { AuthContext } from "../../conmponents/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
   const userImage = user?.photoURL;
   console.log(user?.photoURL);
 
   const handelBurgerMenuIcon = () => {
     setBurgerMenu(!burgerMenu);
   };
+
+  const handleLogOut = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You want to logout",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, logout"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        logOut()
+        .then(() => {
+          Swal.fire({
+            title: "Deleted!",
+            text: "Logout successfull",
+            icon: "success"
+          });
+        })
+      }
+    });
+    
+  }
 
   return (
     <>
@@ -90,7 +115,7 @@ const Navbar = () => {
           <div className="nav_bar_user_Info_contaienr">
             <div>
               {user ? (
-                <div className="sing_in_btn">Sing Out</div>
+                <div onClick={handleLogOut} className="sing_in_btn">Sing Out</div>
               ) : (
                 <Link to="/singin">
                   <div className="sing_in_btn">Sing In</div>
