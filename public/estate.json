@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/0qxygk8/digital-marketing-agency-ntwrk-g39p1k-Djv-SY-unsplash.png",
+    "estate_title": "Luxury Apartment in Downtown",
+    "segment_name": "Residential",
+    "description": "This luxury apartment in downtown offers an unparalleled living experience. With high ceilings, modern finishes, and large windows that provide an abundance of natural light, this property is perfect for those who appreciate both comfort and style. The apartment features a spacious living room, a state-of-the-art kitchen, and access to a private swimming pool. Situated in the heart of the city, it provides easy access to shopping centers, restaurants, and public transportation. Whether you are looking to rent or buy, this property is a prime choice for urban living.",
+    "price": "$950,000",
+    "status": "Sale",
+    "area": "2000 sq ft",
+    "location": "Downtown, City Center",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/r2V6dkN/emily-barrington-hj-Wqy-OMGv-NY-unsplash.png",
+    "estate_title": "Cozy Suburban House",
+    "segment_name": "Residential",
+    "description": "Nestled in a peaceful suburban neighborhood, this cozy house offers a perfect blend of comfort and convenience. The property boasts a warm and inviting living room, a fully equipped kitchen, and a spacious backyard, ideal for family gatherings or relaxing in the sun. The house is located close to schools, parks, and local shops, making it an excellent choice for families. Whether you're looking to rent or purchase, this charming home provides a tranquil retreat from the hustle and bustle of city life.",
+    "price": "$650,000",
+    "status": "Sale",
+    "area": "2200 sq ft",
+    "location": "Greenwood Suburbs",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/m6G2YBz/frames-for-your-heart-2d4l-AQAlb-DA-unsplash.png",
+    "estate_title": "Modern Loft in Urban Area",
+    "segment_name": "Residential",
+    "description": "This modern loft, situated in a vibrant urban area, is perfect for those who enjoy a sleek, contemporary lifestyle. The open-concept design features high ceilings, exposed brick walls, and large windows that allow for plenty of natural light. The kitchen is fully equipped with modern appliances, and the living area is spacious enough to entertain guests. The property is located near trendy cafes, shops, and public transport, making it ideal for young professionals. Available for both sale and rent, this loft is a great option for city living.",
+    "price": "$800,000",
+    "status": "Rent",
+    "area": "1800 sq ft",
+    "location": "Urban District, Central City",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/PzM1pgP/frames-for-your-heart-m-R1-CIDdu-GLc-unsplash.png",
+    "estate_title": "Beachfront Villa",
+    "segment_name": "Residential",
+    "description": "This stunning beachfront villa offers the ultimate in luxury living. With direct access to the beach, you can enjoy breathtaking ocean views right from your living room. The villa features multiple bedrooms, a spacious living area, a modern kitchen, and a private swimming pool. It's the perfect getaway for those who love the ocean and want to enjoy a relaxed, beachside lifestyle. Available for sale, this villa is an excellent investment in a prime coastal location.",
+    "price": "$2,500,000",
+    "status": "Sale",
+    "area": "3500 sq ft",
+    "location": "Sunset Beach, Coastal Town",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/P5BFWvD/salman-saqib-z6-UAWp-QAh-Xs-unsplash.png",
+    "estate_title": "Mountain Retreat Cabin",
+    "segment_name": "Residential",
+    "description": "Escape to this charming mountain retreat cabin, nestled in the heart of a picturesque forest. The cabin offers a cozy living room with a fireplace, a fully equipped kitchen, and a spacious deck with stunning views of the surrounding mountains. It's the perfect spot for those who love nature and outdoor activities. Whether you're looking to rent for a vacation or buy as a second home, this cabin provides a serene and peaceful environment.",
+    "price": "$400,000",
+    "status": "Rent",
+    "area": "1500 sq ft",
+    "location": "Rocky Mountains, Forest Park",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/sRy1k0r/sieuwert-otterloo-aren8nutd1-Q-unsplash.png",
+    "estate_title": "Downtown Penthouse",
+    "segment_name": "Residential",
+    "description": "This exclusive downtown penthouse offers luxury and style in one of the city's most sought-after locations. The property features a spacious open-plan living area, a gourmet kitchen, and floor-to-ceiling windows with panoramic city views. The penthouse also includes access to private amenities such as a rooftop swimming pool and a fitness center. Ideal for those who want to live in the heart of the city, this penthouse is available for both sale and rent.",
+    "price": "$1,800,000",
+    "status": "Sale",
+    "area": "2800 sq ft",
+    "location": "Downtown, City Center",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/JCBCsQX/stephan-bechert-y-FV39g6-AZ5o-unsplash.png",
+    "estate_title": "Historic Country Estate",
+    "segment_name": "Residential",
+    "description": "Step back in time with this beautifully preserved historic country estate. Located in a peaceful rural area, the estate features a grand living room, a traditional kitchen, and beautifully landscaped gardens. The property is steeped in history and offers a unique living experience for those who appreciate classic architecture and timeless elegance. Available for sale, this estate is perfect for those looking to own a piece of history in a serene setting.",
+    "price": "$1,200,000",
+    "status": "Sale",
+    "area": "5000 sq ft",
+    "location": "Countryside, Rural Town",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/KyqRtzh/webaliser-TPTXZd9m-Oo-unsplash.png ",
+    "estate_title": "Modern Family Home",
+    "segment_name": "Residential",
+    "description": "This modern family home is located in a friendly suburban neighborhood and offers all the amenities needed for comfortable living. The house features a large living room, a fully equipped kitchen, and a spacious backyard, perfect for family gatherings. The property is located near schools, parks, and shopping centers, making it an ideal choice for families looking to settle down. Available for both sale and rent, this home is designed with family life in mind.",
+    "price": "$750,000",
+    "status": "Rent",
+    "area": "2400 sq ft",
+    "location": "Willow Creek Suburbs",
+    "facilities": ["living room", "swimming pool", "Kitchen"]
+  }
+]

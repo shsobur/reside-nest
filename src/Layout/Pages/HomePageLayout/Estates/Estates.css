@@ -1,0 +1,36 @@
+  .main_estate_outer_container {
+    height: auto;
+    max-width: 1920px;
+    min-width: 400px;
+    margin: auto;
+  }
+
+  .main_estate_inner_container {
+    height: auto;
+    width: 100%;
+  }
+
+  .main_estste_title_container {
+    text-align: center;
+    font-family: "Inter", serif;
+  }
+
+  .main_estste_title_container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0d263b;
+  }
+
+  .main_estste_title_container p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0d263b;
+  }
+
+  .main_card_section_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin-top: 100px;
+    padding: 0 50px;
+  }

@@ -1,0 +1,87 @@
+.main_card_container {
+  box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+}
+
+.main_image_container {
+  height: auto;
+  width: 100%;
+}
+
+.main_image_container img{
+  width: 100%;
+}
+
+.main_card_title_container {
+  padding: 30px 30px;
+  font-family: "Inter", serif;
+}
+
+.card_title_row_one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_title_row_one_outer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card_title_row_one_outer_container p {
+  color: #7C8893;
+}
+
+.title_icon_container {
+  font-size: 1.2rem;
+  color: #8b5cf4;
+}
+
+.card_title_row_two {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0d263b;
+  padding: 20px 0;
+  border-bottom: 2px solid #D9D9D9;
+}
+
+.card_title_row_three {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card_row_three_outer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card_row_three_outer_container p {
+  color: #7C8893;
+}
+
+.card_title_row_three  button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #8b5cf4;
+}
+
+.card_title_row_three  button:hover {
+  text-decoration: underline;
+}
+
+.card_price_container {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #8b5cf4;
+
+}
