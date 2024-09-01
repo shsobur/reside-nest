@@ -9,7 +9,7 @@
     "status": "Sale",
     "area": "2000 sq ft",
     "location": "Downtown, City Center",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["4 living room", "Swimming pool", "Kitchen"]
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "status": "Sale",
     "area": "2200 sq ft",
     "location": "Greenwood Suburbs",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["3 living room", "Garden", "Kitchen"]
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "status": "Rent",
     "area": "1800 sq ft",
     "location": "Urban District, Central City",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["4 living room", "Swimming pool", "Kitchen"]
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "status": "Sale",
     "area": "3500 sq ft",
     "location": "Sunset Beach, Coastal Town",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["4 living room", "Swimming pool", "Kitchen"]
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "status": "Rent",
     "area": "1500 sq ft",
     "location": "Rocky Mountains, Forest Park",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["6 living room", "Swimming pool", "Kitchen"]
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "status": "Sale",
     "area": "2800 sq ft",
     "location": "Downtown, City Center",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["5 living room", "Playground", "Kitchen"]
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "status": "Sale",
     "area": "5000 sq ft",
     "location": "Countryside, Rural Town",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["3 living room", "Swimming pool", "Kitchen"]
   },
   {
     "id": 8,
@@ -93,6 +93,6 @@
     "status": "Rent",
     "area": "2400 sq ft",
     "location": "Willow Creek Suburbs",
-    "facilities": ["living room", "Swimming pool", "Kitchen"]
+    "facilities": ["4 living room", "Swimming pool", "Kitchen"]
   }
 ]
