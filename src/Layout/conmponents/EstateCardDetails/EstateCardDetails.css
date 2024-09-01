@@ -158,11 +158,121 @@
   font-size: 1.1rem;
   line-height: 30px;
   font-weight: 400;
-  /* letter-spacing: 1px; */
 }
 
 .main_deatils_section_details_container span {
   font-size: 1.1rem;
   font-weight: 600;
   color: #0d263b;
+}
+
+@media screen and (max-width: 1280px) {
+  .main_details_image_outer_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  .card_details_title_container h2 {
+    font-size: 1.6rem;
+  }
+
+  .details_facilities_container h2 {
+    font-size: 1.2rem;
+  }
+
+  .details_card_estate_info_row_one_container {
+    padding: 20px 10px;
+  }
+
+  .facilitise_info_contaienr {
+    padding: 20px 10px;
+  }
+
+  .estate_card_price_container {
+    font-size: 1.2rem;
+    padding: 8px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main_card_details_outer_container {
+    padding: 0 20px;
+  }
+
+  #details_box_1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  #details_box_2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .main_details_image_outer_container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .facilitise_info_contaienr {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .card_details_title_container h2 {
+    font-size: 1.3rem;
+  }
+
+  .details_facilities_container h2 {
+    font-size: 1.1rem;
+  }
+
+  .main_details_info_container {
+    padding: 10px;
+  }
+
+  .details_location_container p {
+    font-size: 1rem;
+  }
+
+  .details_card_estate_info_row_one_container {
+    padding: 10px;
+  }
+
+  .details_card_estate_info_row_one_container p {
+    font-size: 1rem;
+  }
+
+  .details_card_estate_info_row_one_container span {
+    font-size: 14px;
+  }
+
+  .facilitise_info_contaienr {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+  }
+
+  .facilitise_info_contaienr p {
+    font-size: 1rem;
+  }
+
+  .estate_card_price_container {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  .main_deatils_section_details_container article {
+    font-size: 14px;
+  }
+
+  .main_deatils_section_details_container span {
+    font-size: 1rem;
+  }
 }
