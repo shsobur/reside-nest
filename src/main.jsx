@@ -10,6 +10,7 @@ import ErrorPage from "./Layout/conmponents/ErrorPage/ErrorPage";
 import SingIn from "./Layout/Pages/Authentication/SingIn/SingIn";
 import SingUp from "./Layout/Pages/Authentication/SingUp/SingUp";
 import AuthProvider from "./Layout/conmponents/AuthProvider/AuthProvider";
+import EstateCardDetails from "./Layout/conmponents/EstateCardDetails/EstateCardDetails";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
       {
         path: "/singup",
         element: <SingUp></SingUp>,
+      },
+      {
+        path: "/estate/details/:id",
+        element: <EstateCardDetails></EstateCardDetails>,
+        loader: () => fetch("../estate.json"),
       },
     ],
   },

@@ -1,0 +1,92 @@
+.main_card_details_outer_container {
+  max-width: 1920px;
+  min-width: 400px;
+  height: auto;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.main_card_details_inner_container {
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid green;
+}
+
+.main_details_section_outer_container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+#details_box_1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+#details_box_2 {
+  grid-column-start: 7;
+  grid-column-end: -1;
+}
+
+#details_box_3 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.main_details_image_outer_container {
+  border: 1px solid rgb(233, 8, 27);
+}
+
+.main_details_info_container {
+  border: 1px solid rgb(12, 8, 233);
+}
+
+.main_deatils_section_details_container {
+  border: 1px solid rgb(113, 233, 8);
+}
+
+.main_details_image_container {
+  height: auto;
+  width: 100%;
+}
+
+.main_details_image_container img {
+  height: 100%;
+  width: 100%;
+}
+
+.card_details_title_container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d263b;
+}
+
+.card_details_title_container p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #737373;
+}
+
+.details_location_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.details_location_icon_container {
+  color: #8b5cf4;
+  font-size: 1.3rem;
+}
+
+.details_location_container p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0d263b;
+}
+
+.details_card_estate_info_container {
+  border: 2px solid purple;
+}

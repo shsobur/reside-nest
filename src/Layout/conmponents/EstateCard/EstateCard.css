@@ -1,18 +1,20 @@
 .main_card_container {
   box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.main_card_container:hover {
+  transform: scale(1.1);
 }
 
 .main_image_container {
-  cursor: pointer;
   height: auto;
   width: 100%;
-  /* position: relative; */
 }
 
 .main_image_container img {
   width: 100%;
-  /* position: absolute; */
-  /* top: 0px; */
 }
 
 .main_card_title_container {

@@ -2,9 +2,11 @@ import { FaChartArea, FaUser } from "react-icons/fa";
 import "../EstateCard/EstateCard.css";
 import PropTypes from 'prop-types';
 import { FaCheckToSlot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const EstateCard = ({ estate }) => {
   const {
+    id,
     image,
     estate_title,
     segment_name,
@@ -42,7 +44,9 @@ const EstateCard = ({ estate }) => {
               <div className="title_icon_container"><FaChartArea /></div>
               <p>{area}</p>
             </div>
-            <button>READ MORE</button>
+            <Link to={`/estate/details/${id}`}> 
+              <button>READ MORE</button>
+            </Link>
           </div>
 
           <div className="card_price_container"> 
