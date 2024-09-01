@@ -70,3 +70,29 @@
 .main_user_profile_info_container button:active {
   background-color: #7a4bdf;
 }
+
+.update_modal_title h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0d263b;
+  font-weight: 700;
+}
+
+.update_input_container input {
+  border-bottom: 2px solid #0d263b;
+  outline: none;
+  padding: 6px 10px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.profile_update_btn button {
+  background-color: #8b5cf4;
+  color: #ffffff;
+  padding: 6px 20px;
+  margin-top: 50px;
+}
+
+.profile_update_btn button:active {
+  background-color: #7c50da;
+}
