@@ -36,41 +36,25 @@
     padding: 0 50px;
   }
 
-
-
-
-
   @media screen and (max-width: 1536px) {
     .main_card_section_container {
       gap: 70px;
     }
   }
-  
-  
-  
-  
-  
+
   @media screen and (max-width: 1280px) {
     .main_card_section_container {
       gap: 50px;
     }
   }
-  
-  
-  
-  
-  
+
   @media screen and (max-width: 1024px) {
     .main_card_section_container {
       gap: 20px;
       padding: 0 30px;
     }
   }
-  
-  
-  
-  
-  
+
   @media screen and (max-width: 768px) {
     .main_card_section_container {
       grid-template-columns: repeat(2, 1fr);
@@ -81,11 +65,7 @@
       margin-top: 60px;
     }
   }
-  
-  
-  
-  
-  
+
   @media screen and (max-width: 640px) {
     .main_card_section_container {
       padding: 10px;
@@ -99,12 +79,4 @@
     .main_estste_title_container {
       margin-top: 40px;
     }
-  }
-  
-  
-  
-  
-  
-  @media screen and (max-width: 475px) {
-    
   }

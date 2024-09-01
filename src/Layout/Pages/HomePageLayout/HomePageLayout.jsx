@@ -1,3 +1,4 @@
+import PrivetRoutes from "../../conmponents/PrivetRoutes/PrivetRoutes";
 import Estates from "./Estates/Estates";
 import HeadingSlider from "./HeadingSlider/HeadingSlider";
 import HomeBaner from "./HomeBaner/HomeBaner";
@@ -8,7 +9,7 @@ const HomePageLayout = () => {
     <div>
       <HomeBaner></HomeBaner>
       <MainFocus></MainFocus>
-      <Estates></Estates>
+      <PrivetRoutes><Estates></Estates></PrivetRoutes>
       <HeadingSlider></HeadingSlider>
     </div>
   );
