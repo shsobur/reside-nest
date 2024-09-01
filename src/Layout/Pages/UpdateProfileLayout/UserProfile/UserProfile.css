@@ -1,0 +1,72 @@
+.main_profile_outer_contaienr {
+  height: calc(100vh - 80px);
+  max-width: 1920px;
+  min-width: 400px;
+  margin: auto;
+}
+
+.main_profile_inner_contaienr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main_profile_section_container {
+  height: 70%;
+  width: 40%;
+  box-shadow: #00000072 0px 2px 4px, #0000005a 0px 7px 13px -3px, rgba(0, 0, 0, 0.257) 0px -3px 0px inset;
+}
+
+.profile_image_container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2ecfe;
+}
+
+.profile_image_container p {
+  height: 180px;
+  width: 180px;
+}
+
+.profile_image_container img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #8b5cf4;
+  border-radius: 50%;
+}
+
+.main_user_profile_info_container {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: "Inter", serif;
+  padding-top: 20px;
+  color: #ffffff;
+  background-color: #0d263b;
+}
+
+.main_user_profile_info_container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main_user_profile_info_container p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #c8c8c8;
+}
+
+.main_user_profile_info_container button {
+  background-color: #8b5cf4;
+  padding: 8px 30px;
+  margin-top: 30px;
+}
+
+.main_user_profile_info_container button:active {
+  background-color: #7a4bdf;
+}

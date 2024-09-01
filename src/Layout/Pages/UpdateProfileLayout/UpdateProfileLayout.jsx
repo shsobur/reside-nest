@@ -1,7 +1,12 @@
+import PrivetRoutes from "../../conmponents/PrivetRoutes/PrivetRoutes";
+import UserProfile from "./UserProfile/UserProfile";
+
 const UpdateProfileLayout = () => {
   return (
     <div>
-      <h2>Hello this is update profile layout</h2>
+      <PrivetRoutes>
+        <UserProfile></UserProfile>
+      </PrivetRoutes>
     </div>
   );
 };

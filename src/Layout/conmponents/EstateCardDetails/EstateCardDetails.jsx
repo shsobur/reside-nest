@@ -12,7 +12,8 @@ const EstateCardDetails = () => {
   const cardItem = cardItems.find(item => item.id === intId);
 
   return (
-    <div className="main_card_details_outer_container">
+    <>
+      <div className="main_card_details_outer_container">
       <div className="main_card_details_inner_container">
 
         <div className="main_details_section_outer_container">
@@ -92,6 +93,7 @@ const EstateCardDetails = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

@@ -10,7 +10,7 @@ import Swal from "sweetalert2";
 
 const SingUp = () => {
   const [showPass, setShowPass] = useState(false);
-  const {singUpUser} = useContext(AuthContext);
+  const {singUpUser, updateUserProfile} = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleShowPass = () => {
@@ -25,30 +25,38 @@ const SingUp = () => {
 
   const onSubmit = (data) => {
     const name = data.name;
+    const photo = data.photo;
     const email = data.email;
     const password = data.password;
-
-    console.log(name, email, password);
 
     singUpUser(email, password)
     .then(result => {
       const singUpUser = result.user
       console.log(singUpUser);
-      const Toast = Swal.mixin({
-        toast: true,
-        position: "top",
-        showConfirmButton: false,
-        timer: 2000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.onmouseenter = Swal.stopTimer;
-          toast.onmouseleave = Swal.resumeTimer;
-        }
-      });
-      Toast.fire({
-        icon: "success",
-        title: "Signed Up successfully"
-      });
+
+      updateUserProfile(name, photo)
+      .then(() => {
+        console.log("user updated")
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top",
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          }
+        });
+        Toast.fire({
+          icon: "success",
+          title: "Signed Up successfully"
+        });
+      })
+      .catch(error => {
+        console.log("update error: ", error);
+      })
+
       navigate("/");
     })
     .catch(error => {
@@ -87,7 +95,15 @@ const SingUp = () => {
                   type="text"
                   name="photo"
                   placeholder="Photo URL (Optional)"
+                  {...register("photo", { required: true })}
                 />
+                <div>
+                  {errors.photo && (
+                    <span className="text-xs font-light text-red-500">
+                      Photo is required.
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="authentication_form_input_container">
