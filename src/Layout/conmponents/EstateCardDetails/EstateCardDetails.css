@@ -9,8 +9,8 @@
 .main_card_details_inner_container {
   height: 100%;
   width: 100%;
-  padding: 10px 10px;
-  border: 1px solid green;
+  padding: 50px 10px;
+  font-family: "Inter", serif;
 }
 
 .main_details_section_outer_container {
@@ -35,15 +35,20 @@
 }
 
 .main_details_image_outer_container {
-  border: 1px solid rgb(233, 8, 27);
+  box-shadow: #32325d40 0px 6px 12px -2px, #0000004d 0px 3px 7px -3px;
+  border-radius: 8px;
 }
 
 .main_details_info_container {
-  border: 1px solid rgb(12, 8, 233);
+  box-shadow: #32325d40 0px 6px 12px -2px, #0000004d 0px 3px 7px -3px;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .main_deatils_section_details_container {
-  border: 1px solid rgb(113, 233, 8);
+  box-shadow: #32325d40 0px 6px 12px -2px, #0000004d 0px 3px 7px -3px;
+  padding: 20px 10px;
+  border-radius: 8px;
 }
 
 .main_details_image_container {
@@ -54,6 +59,7 @@
 .main_details_image_container img {
   height: 100%;
   width: 100%;
+  border-radius: 8px;
 }
 
 .card_details_title_container h2 {
@@ -63,7 +69,7 @@
 }
 
 .card_details_title_container p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #737373;
 }
@@ -72,7 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 4px;
   margin-top: 40px;
 }
 
@@ -87,6 +93,76 @@
   color: #0d263b;
 }
 
-.details_card_estate_info_container {
-  border: 2px solid purple;
+.details_card_estate_info_row_one_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  margin-top: 20px;
+  border-top: 1px dashed #DCDCDC;
+  border-bottom: 1px dashed #DCDCDC;
+}
+
+.details_card_estate_info_row_one_container p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0d263b;
+}
+
+.details_card_estate_info_row_one_container span {
+  color: #7C8893;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.details_facilities_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.details_facilities_container h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0d263b;
+}
+
+.facilitise_info_contaienr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  margin-top: 20px;
+  border-top: 1px dashed #DCDCDC;
+  border-bottom: 1px dashed #DCDCDC;
+}
+
+.facilitise_info_contaienr p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0d263b;
+}
+
+.estate_card_price_container {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #8b5cf4;
+  margin-top: 20px;
+}
+
+.main_deatils_section_details_container article {
+  font-size: 1.1rem;
+  line-height: 30px;
+  font-weight: 400;
+  /* letter-spacing: 1px; */
+}
+
+.main_deatils_section_details_container span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0d263b;
 }
