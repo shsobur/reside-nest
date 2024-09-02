@@ -10,7 +10,7 @@ import Swal from "sweetalert2";
 
 const SingUp = () => {
   const [showPass, setShowPass] = useState(false);
-  const {singUpUser, updateUserProfile} = useContext(AuthContext);
+  const { singUpUser, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleShowPass = () => {
@@ -30,44 +30,49 @@ const SingUp = () => {
     const password = data.password;
 
     singUpUser(email, password)
-    .then(result => {
-      const singUpUser = result.user
-      console.log(singUpUser);
+      .then((result) => {
+        const singUpUser = result.user;
+        console.log(singUpUser);
 
-      updateUserProfile(name, photo)
-      .then(() => {
-        console.log("user updated")
-        const Toast = Swal.mixin({
-          toast: true,
-          position: "top",
-          showConfirmButton: false,
-          timer: 2000,
-          timerProgressBar: true,
-          didOpen: (toast) => {
-            toast.onmouseenter = Swal.stopTimer;
-            toast.onmouseleave = Swal.resumeTimer;
-          }
-        });
-        Toast.fire({
-          icon: "success",
-          title: "Signed Up successfully"
-        });
-      })
-      .catch(error => {
-        console.log("update error: ", error);
-      })
+        updateUserProfile(name, photo)
+          .then(() => {
+            console.log("user updated");
+            const Toast = Swal.mixin({
+              toast: true,
+              position: "top",
+              showConfirmButton: false,
+              timer: 2000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+              },
+            });
+            Toast.fire({
+              icon: "success",
+              title: "Signed Up successfully",
+            });
+          })
+          .catch((error) => {
+            console.log("update error: ", error);
+          });
 
-      navigate("/");
-    })
-    .catch(error => {
-      console.log(error)
-    })
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
     <div className="main_authentication_page_outer_container">
       <div className="main_authentication_page_inner_container">
-        <div className="main_authentication_form_container">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          className="main_authentication_form_container"
+        >
           <div className="authentication_form_title">
             <h2>Sing Up</h2>
           </div>
@@ -127,7 +132,11 @@ const SingUp = () => {
                   type={showPass ? "text" : "password"}
                   name="password"
                   placeholder="Enter Your Password(***)"
-                  {...register("password", { required: true, minLength: 6, pattern: /^(?=.*[a-z])(?=.*[A-Z]).*$/ })}
+                  {...register("password", {
+                    required: true,
+                    minLength: 6,
+                    pattern: /^(?=.*[a-z])(?=.*[A-Z]).*$/,
+                  })}
                 />
               </div>
 
@@ -138,24 +147,25 @@ const SingUp = () => {
               </div>
 
               <div className="mb-5">
-                  {errors.password?.type === "required" && (
-                    <span className="text-xs font-light text-red-500">
-                      Password is required.
-                    </span>
-                  )}
+                {errors.password?.type === "required" && (
+                  <span className="text-xs font-light text-red-500">
+                    Password is required.
+                  </span>
+                )}
 
-                  {errors.password?.type === "minLength" && (
-                    <span className="text-xs font-light text-red-500">
-                      Password should be at least 6 characters.
-                    </span>
-                  )}
+                {errors.password?.type === "minLength" && (
+                  <span className="text-xs font-light text-red-500">
+                    Password should be at least 6 characters.
+                  </span>
+                )}
 
-                  {errors.password?.type === "pattern" && (
-                    <span className="text-xs font-light text-red-500">
-                      Use at least one uppercase(A-Z) and lowercase(a-z) character.
-                    </span>
-                  )}
-                </div>
+                {errors.password?.type === "pattern" && (
+                  <span className="text-xs font-light text-red-500">
+                    Use at least one uppercase(A-Z) and lowercase(a-z)
+                    character.
+                  </span>
+                )}
+              </div>
 
               <div className="authentication_submit_btn">
                 <input type="submit" value="Sing Up" />

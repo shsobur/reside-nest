@@ -65,7 +65,7 @@ const SocialLogin = () => {
   return (
     <div className="main_social_login_icon_container">
       <p onClick={handleGoogleSingIn}><FaGoogle /></p>
-      <p onClick={handleGithubSingIn}><FaGithub /></p>
+      <p onClick={handleGithubSingIn}><FaGithub /></p>  
     </div>
   );
 };

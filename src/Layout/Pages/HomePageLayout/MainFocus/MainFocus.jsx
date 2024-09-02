@@ -17,7 +17,12 @@ const MainFocus = () => {
         </div>
 
         <div className="main_focus_card_outer_container">
-          <div className="focus_parcard_container">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            className="focus_parcard_container"
+          >
             <div className="svg_image_outer_container">
               <div className="svg_image_inner_container">
                 <BuyHomeSvg></BuyHomeSvg>
@@ -36,7 +41,12 @@ const MainFocus = () => {
             </div>
           </div>
 
-          <div className="focus_parcard_container">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            className="focus_parcard_container"
+          >
             <div className="svg_image_outer_container">
               <div className="svg_image_inner_container">
                 <RentHomeSvg></RentHomeSvg>
@@ -55,7 +65,12 @@ const MainFocus = () => {
             </div>
           </div>
 
-          <div className="focus_parcard_container">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+            className="focus_parcard_container"
+          >
             <div className="svg_image_outer_container">
               <div className="svg_image_inner_container">
                 <SellHomeSvg></SellHomeSvg>
@@ -77,39 +92,57 @@ const MainFocus = () => {
 
         <div className="main_focus_builder_info_outer_container">
           <div className="main_focus_builder_info_inner_container">
-
-              <div className="builder_par_section_container">
-                <div className="builder_Info_icon_cntainer">
-                  <ConstructionSvg></ConstructionSvg>
-                </div>
-                <h3>300+</h3>
-                <p>Total Construction</p>
+            <div
+              data-aos="zoom-in-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              className="builder_par_section_container"
+            >
+              <div className="builder_Info_icon_cntainer">
+                <ConstructionSvg></ConstructionSvg>
               </div>
+              <h3>300+</h3>
+              <p>Total Construction</p>
+            </div>
 
-              <div className="builder_par_section_container">
-                <div className="builder_Info_icon_cntainer">
-                  <ApartioSvg></ApartioSvg>
-                </div>
-                <h3>140+</h3>
-                <p>Apartio Rooms</p>
+            <div
+              data-aos="zoom-in-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              className="builder_par_section_container"
+            >
+              <div className="builder_Info_icon_cntainer">
+                <ApartioSvg></ApartioSvg>
               </div>
+              <h3>140+</h3>
+              <p>Apartio Rooms</p>
+            </div>
 
-              <div className="builder_par_section_container">
-                <div className="builder_Info_icon_cntainer">
-                  <ApartmentsSvg></ApartmentsSvg>
-                </div>
-                <h3>250+</h3>
-                <p>Apartments Sold</p>
+            <div
+              data-aos="zoom-in-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              className="builder_par_section_container"
+            >
+              <div className="builder_Info_icon_cntainer">
+                <ApartmentsSvg></ApartmentsSvg>
               </div>
+              <h3>250+</h3>
+              <p>Apartments Sold</p>
+            </div>
 
-              <div className="builder_par_section_container">
-                <div className="builder_Info_icon_cntainer">
-                  <AreaSvg></AreaSvg>
-                </div>
-                <h3>710+</h3>
-                <p>Total Area Sq</p>
+            <div
+              data-aos="zoom-in-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              className="builder_par_section_container"
+            >
+              <div className="builder_Info_icon_cntainer">
+                <AreaSvg></AreaSvg>
               </div>
-
+              <h3>710+</h3>
+              <p>Total Area Sq</p>
+            </div>
           </div>
         </div>
       </section>

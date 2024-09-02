@@ -11,13 +11,13 @@ import Swal from "sweetalert2";
 
 const SingIn = () => {
   const [showPass, setShowPass] = useState(false);
-  const {singInUser} = useContext(AuthContext);
+  const { singInUser } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   const handleShowPass = () => {
     setShowPass(!showPass);
-  }
+  };
 
   const {
     register,
@@ -32,43 +32,47 @@ const SingIn = () => {
     console.log(email, password);
 
     singInUser(email, password)
-    .then(result => {
-      const singInUser = result.user
-      console.log(singInUser);
-      const Toast = Swal.mixin({
-        toast: true,
-        position: "top",
-        showConfirmButton: false,
-        timer: 2000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.onmouseenter = Swal.stopTimer;
-          toast.onmouseleave = Swal.resumeTimer;
-        }
+      .then((result) => {
+        const singInUser = result.user;
+        console.log(singInUser);
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top",
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          },
+        });
+        Toast.fire({
+          icon: "success",
+          title: "Signed in successfully",
+        });
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+        setError("invalid username or password! Try again.");
       });
-      Toast.fire({
-        icon: "success",
-        title: "Signed in successfully"
-      });
-      navigate("/");
-    })
-    .catch(error => {
-      console.log(error);
-      setError("invalid username or password! Try again.")
-    })
-  }
+  };
 
   return (
     <div className="main_authentication_page_outer_container">
       <div className="main_authentication_page_inner_container">
-        <div className="main_authentication_form_container">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          className="main_authentication_form_container"
+        >
           <div className="authentication_form_title">
             <h2>Sing In</h2>
           </div>
 
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="main_authentication_form_outer_container">
-
               <div className="authentication_form_input_container">
                 <input
                   type="email"
@@ -87,7 +91,7 @@ const SingIn = () => {
 
               <div className="authentication_form_input_container">
                 <input
-                  type={showPass ? "text" : "password" }
+                  type={showPass ? "text" : "password"}
                   name="password"
                   placeholder="Password(***)"
                   {...register("password", { required: true })}

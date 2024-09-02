@@ -6,8 +6,8 @@ import Swal from "sweetalert2";
 
 const UserProfile = () => {
   const { user } = useContext(AuthContext);
-  const {updateUserProfile} = useContext(AuthContext);
-  const [title, setTitle] = useState(null)
+  const { updateUserProfile } = useContext(AuthContext);
+  const [title, setTitle] = useState(null);
 
   const handleUpdateProfile = (event) => {
     event.preventDefault();
@@ -15,9 +15,8 @@ const UserProfile = () => {
     const name = event.target.name.value;
     const photo = event.target.photo.value;
 
-    updateUserProfile(name, photo)
-    .then(() => {
-      console.log("use name and photo updated")
+    updateUserProfile(name, photo).then(() => {
+      console.log("use name and photo updated");
       const Toast = Swal.mixin({
         toast: true,
         position: "top",
@@ -27,35 +26,59 @@ const UserProfile = () => {
         didOpen: (toast) => {
           toast.onmouseenter = Swal.stopTimer;
           toast.onmouseleave = Swal.resumeTimer;
-        }
+        },
       });
       Toast.fire({
         icon: "success",
-        title: "Signed Up successfully"
-      }); 
+        title: "Signed Up successfully",
+      });
       setTitle("");
-    })
-  }
+    });
+  };
+
+  console.log(user.displayName);
 
   return (
     <div className="main_profile_outer_contaienr">
       <div className="main_profile_inner_contaienr">
         <div className="main_profile_section_container">
           <div className="profile_image_container">
-            <p>
+            <p data-aos="flip-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000">
               <img src={user.photoURL} alt="user img" />
             </p>
           </div>
 
           <div className="main_user_profile_info_container">
-            <h2>{user.displayName}</h2>
+            <h2
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              {user.displayName}
+            </h2>
             <div className="flex items-center justify-center gap-2 mt-5">
-              <h3 className="text-xl">
+              <h3
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                className="text-xl"
+              >
                 <MdOutlineMail />
               </h3>
-              <p>{user.email}</p>
+              <p
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+              >
+                {user.email}
+              </p>
             </div>
             <button
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"  
               onClick={() => document.getElementById("my_modal_1").showModal()}
             >
               Update
@@ -66,7 +89,7 @@ const UserProfile = () => {
             <dialog id="my_modal_1" className="modal">
               <div className="modal-box">
                 <form method="dialog">
-                  <button onClick={() => setTitle(null)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                  <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                     ✕
                   </button>
                 </form>
@@ -81,6 +104,7 @@ const UserProfile = () => {
                           type="text"
                           name="name"
                           value={title}
+                          defaultValue={user.displayName}
                           placeholder="Enter new name"
                         />
                       </div>
@@ -90,6 +114,7 @@ const UserProfile = () => {
                           type="text"
                           name="photo"
                           value={title}
+                          defaultValue={user.photoURL}
                           placeholder="Photo URL"
                         />
                       </div>
