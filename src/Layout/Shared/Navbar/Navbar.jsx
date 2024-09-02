@@ -26,21 +26,19 @@ const Navbar = () => {
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, logout"
+      confirmButtonText: "Yes, logout",
     }).then((result) => {
       if (result.isConfirmed) {
-        logOut()
-        .then(() => {
+        logOut().then(() => {
           Swal.fire({
             title: "Deleted!",
             text: "Logout successfull",
-            icon: "success"
+            icon: "success",
           });
-        })
+        });
       }
     });
-    
-  }
+  };
 
   return (
     <>
@@ -115,7 +113,9 @@ const Navbar = () => {
           <div className="nav_bar_user_Info_contaienr">
             <div>
               {user ? (
-                <div onClick={handleLogOut} className="sing_in_btn">Sing Out</div>
+                <div onClick={handleLogOut} className="sing_in_btn">
+                  Sing Out
+                </div>
               ) : (
                 <Link to="/singin">
                   <div className="sing_in_btn">Sing In</div>
@@ -123,10 +123,10 @@ const Navbar = () => {
               )}
             </div>
 
-            <div>
+            <div className="user_name_title">
               {userImage ? (
                 <div className="nav_user_image">
-                  <img src={userImage} />
+                  <img src={userImage} title={user.displayName} />
                 </div>
               ) : (
                 <div className="nav_user_icon">

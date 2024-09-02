@@ -1,8 +1,18 @@
-# React + Vite
+# RESIDE NEST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live sit URL: 
 
-Currently, two official plugins are available:
+### Features: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Simple and good looking real estate website.
+* Authentication system with firebase.
+* Google / Github authentication system.
+* Dynamic navbar according to user.
+* Privet route for secret pages.
+* Update system for users profile.
+
+###  Npm package used: 
+
+1. [AOS Package](https://www.npmjs.com/package/aos)
+2. [React Hook form](https://react-hook-form.com/)
+2. [Swiper slider](https://swiperjs.com/)

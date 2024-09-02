@@ -16,7 +16,8 @@
 .main_profile_section_container {
   height: 70%;
   width: 40%;
-  box-shadow: #00000072 0px 2px 4px, #0000005a 0px 7px 13px -3px, rgba(0, 0, 0, 0.257) 0px -3px 0px inset;
+  box-shadow: #00000072 0px 2px 4px, #0000005a 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.257) 0px -3px 0px inset;
 }
 
 .profile_image_container {
@@ -95,4 +96,47 @@
 
 .profile_update_btn input:active {
   background-color: #7c50da;
+}
+
+@media screen and (max-width: 1536px) {
+  .main_user_profile_info_container h2 {
+    font-size: 1.6rem;
+  }
+
+  .main_user_profile_info_container p {
+    font-size: 1rem;
+  }
+
+  .profile_image_container p {
+    height: 165px;
+    width: 165px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main_profile_section_container {
+    width: 60%;
+  }
+
+  .profile_image_container p {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile_image_container p {
+    height: 135px;
+    width: 135px;
+  }
+
+  .main_user_profile_info_container h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main_profile_section_container {
+    width: 80%;
+  }
 }
