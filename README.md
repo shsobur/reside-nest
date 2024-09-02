@@ -1,6 +1,6 @@
 # Rside Nest
 
-## Live sit URL:
+## Live sit URL: https://reside-nest-authentication.web.app/
 
 ### Features:
 

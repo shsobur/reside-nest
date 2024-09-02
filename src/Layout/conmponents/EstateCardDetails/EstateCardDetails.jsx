@@ -4,6 +4,7 @@ import { FaChartArea } from "react-icons/fa";
 import { FaLocationDot, FaRegCircleCheck } from "react-icons/fa6";
 import { MdSell } from "react-icons/md";
 import { IoCheckmarkCircle } from "react-icons/io5";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const EstateCardDetails = () => {
   const cardItems = useLoaderData();
@@ -13,6 +14,7 @@ const EstateCardDetails = () => {
 
   return (
     <>
+      <ScrollToTop></ScrollToTop>
       <div className="main_card_details_outer_container">
       <div className="main_card_details_inner_container">
 
