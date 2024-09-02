@@ -1,10 +1,41 @@
 import { MdOutlineMail } from "react-icons/md";
 import "../UserProfile/UserProfile.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../../conmponents/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const UserProfile = () => {
   const { user } = useContext(AuthContext);
+  const {updateUserProfile} = useContext(AuthContext);
+  const [title, setTitle] = useState(null)
+
+  const handleUpdateProfile = (event) => {
+    event.preventDefault();
+
+    const name = event.target.name.value;
+    const photo = event.target.photo.value;
+
+    updateUserProfile(name, photo)
+    .then(() => {
+      console.log("use name and photo updated")
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top",
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Signed Up successfully"
+      }); 
+      setTitle("");
+    })
+  }
 
   return (
     <div className="main_profile_outer_contaienr">
@@ -35,7 +66,7 @@ const UserProfile = () => {
             <dialog id="my_modal_1" className="modal">
               <div className="modal-box">
                 <form method="dialog">
-                  <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                  <button onClick={() => setTitle(null)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                     ✕
                   </button>
                 </form>
@@ -44,25 +75,27 @@ const UserProfile = () => {
                   <div className="update_modal_title">
                     <h2>Update Now</h2>
 
-                    <form>
+                    <form onSubmit={handleUpdateProfile}>
                       <div className="update_input_container">
                         <input
                           type="text"
                           name="name"
+                          value={title}
                           placeholder="Enter new name"
                         />
                       </div>
 
                       <div className="update_input_container">
                         <input
-                          type="password"
-                          name="password"
-                          placeholder="Enter new password"
+                          type="text"
+                          name="photo"
+                          value={title}
+                          placeholder="Photo URL"
                         />
                       </div>
 
                       <div className="profile_update_btn">
-                        <button>Update</button>
+                        <input type="submit" value="Update" />
                       </div>
                     </form>
                   </div>

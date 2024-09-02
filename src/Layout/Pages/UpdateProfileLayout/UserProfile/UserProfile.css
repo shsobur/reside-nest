@@ -86,13 +86,13 @@
   width: 100%;
 }
 
-.profile_update_btn button {
+.profile_update_btn input {
   background-color: #8b5cf4;
   color: #ffffff;
   padding: 6px 20px;
   margin-top: 50px;
 }
 
-.profile_update_btn button:active {
+.profile_update_btn input:active {
   background-color: #7c50da;
 }
