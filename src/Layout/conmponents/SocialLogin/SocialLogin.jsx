@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
-  const { googleSingIn } = useContext(AuthContext);
+  const { googleSingIn, githubSingIn } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleGoogleSingIn = () => {
@@ -36,10 +36,36 @@ const SocialLogin = () => {
     })
   }
 
+  const handleGithubSingIn = () => {
+    githubSingIn()
+    .then((result) => {
+      console.log(result.user)
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top",
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Signed In successfully"
+      });
+      navigate("/")
+    })
+    .catch(error => {
+      console.log(error);
+    })
+  }
+
   return (
     <div className="main_social_login_icon_container">
       <p onClick={handleGoogleSingIn}><FaGoogle /></p>
-      <p><FaGithub /></p>
+      <p onClick={handleGithubSingIn}><FaGithub /></p>
     </div>
   );
 };
